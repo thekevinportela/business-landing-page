@@ -6,12 +6,13 @@ const darkColor = "#E5989B";
 const SquiggleSmall = () => {
   return (
     <Icon
-      w={{ base: 600, md: 1200 }}
-      h={{ base: 600, md: 1200 }}
-      viewBox="0 0 75 140"
+      w={{ base: 850, md: 1200 }}
+      h={{ base: 850, md: 1200 }}
+      viewBox="-20 0 20 177"
       pos={"absolute"}
       overflow={"hidden"}
-      right={{ base: -18, md: 10 }}
+      right={0}
+      // zIndex={2}
     >
       <path
         fill-rule="evenodd"

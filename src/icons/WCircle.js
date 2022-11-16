@@ -5,9 +5,10 @@ const WCircle = () => {
   return (
     <Icon
       position={"absolute"}
+      right={0}
       width={{ base: 400, md: 1000, lg: 2000 }}
       height={{ base: 300, md: 800, lg: 1200 }}
-      viewBox="0 0 304 246"
+      viewBox="0 0 250 246"
       overflow={"hidden"}
     >
       {}

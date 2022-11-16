@@ -1,17 +1,18 @@
 import { Icon } from "@chakra-ui/react";
 import React from "react";
 
-const darkColor = "#6D6875";
+const darkColor = "#E5989B";
 
 const Squiggle = () => {
   return (
     <Icon
-      w={{ base: 700, md: 1200 }}
-      h={{ base: 700, md: 1200 }}
-      viewBox="0 0 75 177"
+      w={1200}
+      h={1200}
+      viewBox="40 0 60 177"
       pos={"absolute"}
       overflow={"hidden"}
-      right={{ base: -28, md: 10 }}
+      right={0}
+      // zIndex={2}
     >
       <path
         fill-rule="evenodd"
@@ -23,7 +24,7 @@ const Squiggle = () => {
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M41.4397 38.8305C37.5627 40.9825 36.5197 40.8965 33.5577 37.9845C30.3937 34.8745 27.3807 31.6125 24.2907 28.4275C23.7867 27.9085 23.1527 27.5015 22.7097 26.9405C21.9307 25.9555 21.2527 24.8925 20.5317 23.8615C21.9857 23.6315 23.5407 22.9735 24.8697 23.2825C26.4637 23.6535 28.1537 24.5685 29.3017 25.7395C33.3907 29.9125 37.2667 34.2935 41.4397 38.8305"
-        fill={{ base: "#FFB4A2", lg: darkColor }}
+        fill={darkColor}
       />
       <path
         fill-rule="evenodd"

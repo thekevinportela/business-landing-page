@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 import Card from "../components/Card";
 import HeaderCard from "../components/HeaderCard";
@@ -6,6 +6,8 @@ import Squiggle from "../icons/Squiggle";
 import SquiggleSmall from "../icons/SquiggleSmall";
 
 const Services = () => {
+  const [isWeb] = useMediaQuery("(min-width: 62em)");
+
   return (
     <Box
       display={"flex"}
@@ -18,7 +20,7 @@ const Services = () => {
       className="services"
       // pt={250}
       py={"10rem"}
-      // overflow={"hidden"}
+      overflow={"hidden"}
     >
       <HeaderCard title={"service/product #1"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
@@ -48,8 +50,7 @@ const Services = () => {
         <br />
         $250
       </HeaderCard>
-      {/* <Squiggle /> */}
-      <SquiggleSmall />
+      {isWeb ? <Squiggle /> : <SquiggleSmall />}
     </Box>
   );
 };

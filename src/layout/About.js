@@ -28,8 +28,8 @@ const About = () => {
       w={"100vw"}
       bg={"#ffdecc"}
       className="about"
-      pt={{ base: shortPhone ? "16rem" : "16rem", md: "15rem" }}
-      pb={"10rem"}
+      pt={{ base: shortPhone ? "10rem" : "13rem", md: "17rem" }}
+      pb={{ base: "6rem", md: "10rem" }}
       overflow={"hidden"}
     >
       {/* <TopDots /> */}
