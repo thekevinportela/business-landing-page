@@ -24,11 +24,11 @@ const About = () => {
       flexDir={"column"}
       justifyContent={"center"}
       alignItems={"center"}
-      // h={"100vh"}
+      h={"100vh"}
       w={"100vw"}
       bg={"#ffdecc"}
       className="about"
-      pt={{ base: shortPhone ? "10rem" : "13rem", md: "17rem" }}
+      pt={{ base: shortPhone ? "20rem" : "13rem", md: "17rem", xl: "14rem" }}
       pb={{ base: "6rem", md: "10rem" }}
       overflow={"hidden"}
     >
