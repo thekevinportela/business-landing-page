@@ -13,8 +13,9 @@ const Contact = () => {
       justifyContent={"center"}
       alignItems={"center"}
       // h={"100vh"}
-      w={"100vw"}
-      bg={"#ffdecc"}
+      // w={"100vw"}
+      w="full"
+      // bg={"#ffdecc"}
       className="contact"
       py={"10rem"}
       overflow={"hidden"}

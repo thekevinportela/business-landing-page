@@ -22,11 +22,11 @@ const About = () => {
     <Box
       display={"flex"}
       flexDir={"column"}
+      w="full"
       justifyContent={"center"}
       alignItems={"center"}
-      h={"100vh"}
-      w={"100vw"}
-      bg={"#ffdecc"}
+      // h={"100vh"}
+      // w={"100vw"}
       className="about"
       pt={{ base: shortPhone ? "20rem" : "13rem", md: "17rem", xl: "14rem" }}
       pb={{ base: "6rem", md: "10rem" }}

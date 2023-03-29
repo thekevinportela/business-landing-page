@@ -1,4 +1,4 @@
-import { Box, Text, useMediaQuery } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 import Card from "../components/Card";
 import HeaderCard from "../components/HeaderCard";
@@ -15,8 +15,9 @@ const Services = () => {
       justifyContent={"center"}
       alignItems={"center"}
       // h={"100vh"}
-      w={"100vw"}
-      bg={"#ffdecc"}
+      // w={"100vw"}
+      w="full"
+      // bg={"#ffdecc"}
       className="services"
       // pt={250}
       py={"10rem"}

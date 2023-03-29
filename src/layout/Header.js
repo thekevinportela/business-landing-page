@@ -37,37 +37,43 @@ const Header = () => {
 
   return (
     <HStack
-      flexDirection={{ base: "column", md: "row" }}
       position={"fixed"}
       w={"full"}
-      justifyContent={{ base: "space-around", md: "space-between" }}
       bg={"#6D6875"}
       zIndex={10}
+      justifyContent={"center"}
     >
-      <Link
-        to="ShowCase"
-        spy={true}
-        smooth={true}
-        offset={0}
-        duration={600}
-        onClick={() => clicked(0)}
-        style={{ cursor: "pointer" }}
+      <HStack
+        justifyContent={{ base: "space-around", md: "space-between" }}
+        w={"full"}
+        maxW={1280}
+        flexDirection={{ base: "column", md: "row" }}
       >
-        <Text px={{ base: 0, md: 5 }} color={"#FFB4A2"} fontSize={60}>
-          cecily's
-        </Text>
-      </Link>
-      <HStack px={{ base: 0, md: 5 }}>
-        {LINK_DATA.map((link) => (
-          <RenderLink
-            label={link.label}
-            to={link.to}
-            offset={link.offset}
-            id={link.id}
-            selected={selected}
-            clicked={clicked}
-          />
-        ))}
+        <Link
+          to="ShowCase"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={600}
+          onClick={() => clicked(0)}
+          style={{ cursor: "pointer" }}
+        >
+          <Text px={{ base: 0, md: 5 }} color={"#FFB4A2"} fontSize={60}>
+            cecily's
+          </Text>
+        </Link>
+        <HStack px={{ base: 0, md: 5 }}>
+          {LINK_DATA.map((link) => (
+            <RenderLink
+              label={link.label}
+              to={link.to}
+              offset={link.offset}
+              id={link.id}
+              selected={selected}
+              clicked={clicked}
+            />
+          ))}
+        </HStack>
       </HStack>
     </HStack>
   );
